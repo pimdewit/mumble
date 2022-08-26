@@ -1,0 +1,15 @@
+{
+  "extends": "./node_modules/gts/",
+  "rules": {
+    "prettier/prettier": 0
+  },
+  "overrides": [
+    {
+      "files": ["scripts/**/*.ts", "scripts/**/*.js"],
+      "rules": {
+        "node/no-unpublished-require": "off",
+        "node/no-unpublished-import": "off"
+      }
+    }
+  ]
+}
